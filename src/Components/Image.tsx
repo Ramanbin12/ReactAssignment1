@@ -1,7 +1,7 @@
 import React from 'react'
 import GEOMETRIC from "../Assets/GEOMETRIC.png"
 import illustration from "../Assets/Illustration.png"
-export const Image = () => {
+ const Image:React.FC = () => {
     return (
         <>
             <div className=" flex justify-center items-center text-center lg:mt-0 ">
@@ -11,4 +11,5 @@ export const Image = () => {
         </>
     )
 }
+export default Image
 

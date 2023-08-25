@@ -1,6 +1,7 @@
 export interface titleType{
-    titles:string[]
-}
+titles:string[]
+    }
+
 export interface ButtonType{
 children:React.ReactNode
 onClick?:()=>void

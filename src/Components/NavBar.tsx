@@ -1,21 +1,24 @@
 import Logo from "./Logo"
-import Button from "./Button"
-import { Title } from "./Title"
+// import Button from "./Button"
+// import { Title } from "./Title"
+// import Menu from "./Menu"
+import {Button,Title,Menu} from "./Export"
 import { subtitle } from '../dummyData'
-import Menu from "./Menu"
-export const NavBar: React.FC = () => {
+const NavBar: React.FC = () => {
     return (
         <>
-            <div className="flex justify-between px-10 mt-6 w-full">
+        
+            <div className="flex fixed w-full justify-between lg:gap-[100px] px-10 mt-6 ">
 
                 <Logo />
-                <div className="flex gap-[100px]">
+                <div className="flex  w-full  lg:justify-between  ">
                     <Title titles={subtitle} />
-                    <div className="hidden lg:flex gap-[1vw]">
+                    <div className=" hidden items-center lg:flex gap-[1vw]">
                         <Button varient="secondary" >create a resume</Button>
                         <Button varient="primary" >Sign In</Button>
                     </div>
-                    <Menu />
+                    <div className="flex-1 lg:hidden"></div>
+                    <Menu/>
                 </div>
             </div>
 
@@ -23,3 +26,4 @@ export const NavBar: React.FC = () => {
     )
 }
 
+export default NavBar
