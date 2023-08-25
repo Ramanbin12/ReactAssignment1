@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
     return (
         <>
         
-            <div className="flex fixed w-full justify-between lg:gap-[100px] px-10 mt-6 ">
+            <div className="flex fixed w-full justify-between lg:gap-[100px] px-10 py-6 bg-white ">
 
                 <Logo />
                 <div className="flex  w-full  lg:justify-between  ">
