@@ -1,8 +1,8 @@
 import React from 'react'
-import { ButtonType } from '../type'
-
-const Button: React.FC<ButtonType> = ({ children, varient, onClick }) => {
-    if (varient === 'primary') {
+import { ButtonType } from '../../utilities/type'
+import { variants } from '../../utilities/constants/dummyData'
+const Button: React.FC<ButtonType> = ({ children, variant, onClick }) => {
+    if (variant === variants.primary) {
         return (
             <button className="border-2 h-12 w-[150px] rounded-3xl px-4 bg-red-600 text-white" onClick={onClick}>{children}</button>
 

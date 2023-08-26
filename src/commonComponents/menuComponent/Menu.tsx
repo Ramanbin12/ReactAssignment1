@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Menu = () => {
+const Menu:React.FC = () => {
     return (
         <>
             <div className="inline-flex  gap-[2vw] items-center  lg:hidden ">

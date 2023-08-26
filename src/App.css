@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .imageComponent_outerConatiner{
+        @apply flex justify-center items-center text-center lg:mt-0 
+    }
+    .imageComponent_img1{
+        @apply hidden sm:block
+    }
+    .imageComponent_img2{
+       @apply sm:hidden block
+    }
+}

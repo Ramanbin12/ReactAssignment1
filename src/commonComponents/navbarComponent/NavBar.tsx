@@ -1,9 +1,5 @@
-import Logo from "./Logo"
-// import Button from "./Button"
-// import { Title } from "./Title"
-// import Menu from "./Menu"
-import {Button,Title,Menu} from "./Export"
-import { subtitle } from '../dummyData'
+import {Button,Title,Menu,Logo} from "../../pages/Home"
+import { subtitle } from '../../utilities/constants/dummyData'
 const NavBar: React.FC = () => {
     return (
         <>
@@ -14,8 +10,8 @@ const NavBar: React.FC = () => {
                 <div className="flex  w-full  lg:justify-between  ">
                     <Title titles={subtitle} />
                     <div className=" hidden items-center lg:flex gap-[1vw]">
-                        <Button varient="secondary" >create a resume</Button>
-                        <Button varient="primary" >Sign In</Button>
+                        <Button variant="secondary" >create a resume</Button>
+                        <Button variant="primary" >Sign In</Button>
                     </div>
                     <div className="flex-1 lg:hidden"></div>
                     <Menu/>

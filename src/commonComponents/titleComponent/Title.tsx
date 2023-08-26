@@ -1,5 +1,5 @@
 import React from 'react'
-import { titleType } from '../type'
+import { titleType } from '../../utilities/type'
 const Title: React.FC<titleType> = ({ titles }) => {
   const displayTitle=()=>{
     return (

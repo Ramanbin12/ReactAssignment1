@@ -5,5 +5,5 @@ titles:string[]
 export interface ButtonType{
 children:React.ReactNode
 onClick?:()=>void
-varient:'primary'|'secondary'
+variant:'primary'|'secondary'
 }
