@@ -5,16 +5,16 @@ const Title: React.FC<titleType> = ({ titles }) => {
     return (
       titles.map((i, index) => {
         return (
-          <li className="font-montserrat" key={index}>{i}</li>
+          <li className="titleComponent_li" key={index}>{i}</li>
         )
       })
     )
   }
   return (
     <>
-      <header className=' hidden lg:flex items-center'>
+      <header className='titleComponent_header'>
         <nav>
-          <ul className='flex justify-around gap-[4vw] ' >
+          <ul className='titleComponent_ul' >
           {displayTitle()}
         
           </ul>

@@ -4,16 +4,16 @@ const NavBar: React.FC = () => {
     return (
         <>
         
-            <div className="flex fixed w-full justify-between lg:gap-[100px] px-10 py-6 bg-white ">
+            <div className="navbarComponent_outerDiv ">
 
                 <Logo />
-                <div className="flex  w-full  lg:justify-between  ">
+                <div className="navbarContainer_innerDiv">
                     <Title titles={subtitle} />
-                    <div className=" hidden items-center lg:flex gap-[1vw]">
+                    <div className=" navbarComponent_buttonComponent">
                         <Button variant="secondary" >create a resume</Button>
                         <Button variant="primary" >Sign In</Button>
                     </div>
-                    <div className="flex-1 lg:hidden"></div>
+                    <div className="navbarComponent_menuComponent"></div>
                     <Menu/>
                 </div>
             </div>
