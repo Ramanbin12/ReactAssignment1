@@ -5,16 +5,12 @@ const Button: React.FC<ButtonType> = ({ children, variant, onClick }) => {
     if (variant === variants.primary) {
         return (
             <button className="buttonComponent_primaryButton" onClick={onClick}>{children}</button>
-
         )
     }
     else {
         return (
             <button className="buttonComponent_secondaryButton" > {children}</button>
-
         )
     }
-
 }
-
 export default Button

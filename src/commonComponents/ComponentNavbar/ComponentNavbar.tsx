@@ -4,7 +4,7 @@ const NavBar: React.FC = () => {
     return (
         <>
         
-            <div className="navbarComponent_outerDiv ">
+            <div className="navbarComcponent_outerDiv ">
 
                 <Logo />
                 <div className="navbarContainer_innerDiv">

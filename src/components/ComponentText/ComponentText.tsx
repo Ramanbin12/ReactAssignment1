@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import {Button,Search} from "../../pages/Home"
-const Text:React.FC = () => {
+import { Button, Search } from "../../pages/Home"
+const Text: React.FC = () => {
     const [input, setInput] = useState("")
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInput(e.target.value)
@@ -18,7 +18,7 @@ const Text:React.FC = () => {
                     <div className="textComponent_inputDiv">
                         <input className='textComponent_input' placeholder="Profession, position or company" type='text' value={input} onChange={handleChange} />
                         <div className="textComponent_searchContainer">
-                          <Search/>
+                            <Search />
                         </div>
                     </div>
                     <Button onClick={handleClick} variant="primary">Find a job</Button>
