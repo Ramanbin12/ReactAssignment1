@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@layer components{
+    .imageComponent_outerConatiner{
+        @apply flex justify-center items-center text-center lg:mt-0 
+    }
+    .imageComponent_img1{
+        @apply hidden sm:block
+    }
+    .imageComponent_img2{
+       @apply sm:hidden block
+    }
+    .pageComponent_page{
+        @apply gap-[200px] sm:gap-[20px] md:gap-[20px] flex  justify-center items-center flex-col lg:flex-row lg:gap-[10px]
+    }
+    .textComponent_outerdiv{
+        @apply w-full mt-[150px] pl-3 justify-center lg:px-10  flex lg:flex lg:w-1/2 flex-col gap-4
+    }
+    .textComponent_title{
+        @apply font-montserrat font-bold text-5xl lg:text-8xl
+    }
+    .textComponent_subTitle{
+        @apply font-montserrat font-normal text-3xl
+    }
+    .textComponent_innerContainer{
+        @apply flex gap-2
+    }
+    .textComponent_inputDiv{
+        @apply flex w-fit border-2 h-12 border-black rounded-3xl
+    }
+    .textComponent_input{
+        @apply flex outline-none ml-5 text-center text-xs flex-wrap
+    }
+
+    .textComponent_searchContainer{
+        @apply px-1 flex items-center
+    }
+    .buttonComponent_primaryButton{
+        @apply border-2 h-12 w-[150px] rounded-3xl px-4 bg-red-600 text-white
+    }
+    .buttonComponent_secondaryButton{
+        @apply border-2 h-12 border-black rounded-3xl px-4 w-[250px] text-center
+    }
+    .menuComponent_OuterContainer{
+        @apply inline-flex  gap-[2vw] items-center  lg:hidden 
+    }
+    .menuComponent_innerContainer{
+        @apply flex flex-col gap-[1vw] items-center
+    }
+    .menuComponent_line{
+        @apply  flex h-[2px] w-[17px] bg-black 
+    }
+    .navbarComponent_outerDiv{
+        @apply flex fixed w-full justify-between lg:gap-[100px] px-10 py-6 bg-white
+    }
+    .navbarContainer_innerDiv{
+        @apply flex  w-full  lg:justify-between  
+    }
+    .navbarComponent_buttonComponent{
+        @apply hidden items-center lg:flex gap-[1vw]
+    }
+
+   .navbarComponent_menuComponent{
+    @apply flex-1 lg:hidden
+   }
+   .titleComponent_header{
+    @apply hidden lg:flex items-center
+   }
+   .titleComponent_ul{
+    @apply flex justify-around gap-[4vw] 
+   }
+   .titleComponent_li{
+    @apply font-montserrat
+   }
+}
